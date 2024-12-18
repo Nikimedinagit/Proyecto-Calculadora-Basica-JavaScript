@@ -1,0 +1,134 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+body.light-mode {
+  background: linear-gradient(135deg, #f1f1f1, #e0e0e0);
+  color: #333;
+}
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#toggleMode{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.calculadora-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.calculadora {
+  width: 300px;
+  background: #222;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#pantalla {
+  width: 90%;
+  padding: 15px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  background: #333;
+  color: #fff;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+input[type="button"] {
+  height: 50px;
+  font-size: 1.2rem;
+  background: #3e3e3e;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px #1a1a1a, -3px -3px 5px #444;
+  transition: all 0.2s ease;
+}
+
+input[type="button"]:hover {
+  background: #5a5a5a;
+}
+
+input[type="button"].operador {
+  background: #ff9800;
+  color: #fff;
+  box-shadow: 3px 3px 6px #c77500, -3px -3px 6px #ffab40;
+}
+
+input[type="button"].operador:hover {
+  background: #e08700;
+}
+
+input[type="button"].igual {
+  background: #00e676;
+  box-shadow: 3px 3px 6px #00c853, -3px -3px 6px #52ff96;
+}
+
+input[type="button"].igual:hover {
+  background: #00c853;
+}
+
+input[type="button"].clear {
+  background: #f44336;
+  color: white;
+  box-shadow: 3px 3px 6px #d32f2f, -3px -3px 6px #ff6659;
+}
+
+input[type="button"].clear:hover {
+  background: #e53935;
+}
